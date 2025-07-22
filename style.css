@@ -1,0 +1,107 @@
+body {
+  font-family: 'Scheherazade New', serif;
+  background: linear-gradient(to bottom, #d0eaff, #ffffff);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.5em 0 0.2em;
+}
+
+.arabic {
+  font-size: 2em;
+  color: #006699;
+  margin-bottom: 0.5em;
+}
+
+.description {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  padding: 0 1em;
+}
+
+main {
+  padding: 1em;
+}
+
+#phraseContainer {
+  font-size: 2em;
+  background-color: #f0f8ff;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#wordOptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 1em;
+}
+
+#wordOptions button {
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border: none;
+  background-color: #e0f7fa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#wordOptions button:hover {
+  background-color: #b2ebf2;
+}
+
+#resultMessage {
+  font-size: 1.5em;
+  margin: 1em 0;
+  color: green;
+}
+
+#retryBtn {
+  display: none;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  margin: 1em auto;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#celebration {
+  display: none;
+  margin-top: 2em;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.cloud {
+  position: absolute;
+  width: 150px;
+  animation: floatClouds 60s linear infinite;
+}
+
+.cloud1 { top: 10%; left: -150px; animation-delay: 0s; }
+.cloud2 { top: 30%; left: -150px; animation-delay: 30s; }
+
+@keyframes floatClouds {
+  0% { left: -150px; }
+  100% { left: 100%; }
+}
